@@ -1,0 +1,25 @@
+<nav id="navbar" [ngClass]="{'active': isActive, 'scroll': isScroll}">
+  <a id="nav-logo">Elven Lau</a>
+  <div (click)="toggleClick()" id="toggle" [ngClass]="{'active': !isActive, 'open': isActive}">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul id="nav-menu" [ngClass]="{'active': isActive}">
+    <li>
+      <a href="#home" class="nav-item">Home</a>
+    </li>
+    <li>
+      <a href="#about" class="nav-item">About</a>
+    </li>
+    <!-- <li>
+      <a href="#" class="nav-item">Experience</a>
+    </li>
+    <li>
+      <a href="#" class="nav-item">Ability</a>
+    </li>
+    <li>
+      <a href="#project" class="nav-item">Project</a>
+    </li> -->
+  </ul>
+</nav>

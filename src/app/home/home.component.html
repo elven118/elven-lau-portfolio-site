@@ -1,0 +1,14 @@
+<div id="home-img">
+  <div class="layer"></div>
+</div>
+<div id="home-center-container">
+  <h1 *ngIf="isHomeTextInit === false" [@headerFadeOut]="isFadeOutStart">
+    <span class="home-grey-text">&lt;h1&gt;</span>
+    <span id="home-typewriter">{{showTxt}}</span>
+    <span class="home-grey-text">&lt;/h1&gt;</span>
+  </h1>
+  <h1 *ngIf="isHomeTextInit">{{showTxt}}</h1>
+  <p *ngIf="isHomeTextInit" [@headerFadeAndEaseIn]>
+    #Full Stack Developer
+  </p>
+</div>

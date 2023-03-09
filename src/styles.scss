@@ -1,0 +1,26 @@
+@import url(./palattes.scss);
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Ubuntu; 
+  color: var(--primary);
+  background-color: var(--black);
+}
+
+a {
+  color: var(--primary);
+}
+
+.section-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+  padding-bottom: 40px;
+}
