@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatIconModule} from '@angular/material/icon';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,8 +20,7 @@ import { ProjectModule } from './project/project.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ProjectModule,
-    MatIconModule
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

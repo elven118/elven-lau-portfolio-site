@@ -1,0 +1,28 @@
+<div class="cell-container">
+  <a *ngIf="!isDetails" class="top-right-detail-button" (click)="onClickDetails()">
+    <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    <span>Details</span>
+  </a>
+  <img src="../../assets/images/ride-sharing-app.jpg" />
+  <div *ngIf="isDetails" class="content-layer">
+    <a class="top-right-close-button" (click)="onClickClose()">
+      <mat-icon class="close-icon" fontIcon="close"></mat-icon>
+    </a>
+    <h2>Overview: </h2>
+    <p>Use simple algorithm to pair up two riders and assign a driver for them - one greedy and one advance algorithm.
+      Also, a simple mobile app user interface</p>
+    <h3>Tech Stack: </h3>
+    <p>
+      Front-end: React Native + Expo<br />
+      Back-end: Nodejs + Expressjs + MongoDB + Redis
+    </p>
+    <h3>Github Link: </h3>
+    <p>
+      <a
+        href="https://github.com/eric19960304/Ridesharing-App-For-HK">https://github.com/eric19960304/Ridesharing-App-For-HK</a>
+      <br />
+      <a
+        href="https://github.com/eric19960304/Ridesharing-App-For-HK-Back-End">https://github.com/eric19960304/Ridesharing-App-For-HK-Back-End</a>
+    </p>
+  </div>
+</div>
