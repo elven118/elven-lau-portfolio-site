@@ -1,7 +1,42 @@
 <h1 class="section-header">Project</h1>
 <div class="grid-container">
-  <app-project-desc></app-project-desc>
-  <div class="cell-container">
-    <app-slider-image></app-slider-image>
-  </div>
+  <app-project-desc>
+    <img class="image-style" src="../../assets/images/ride-sharing-app.jpg" image-comp />
+    <div detail>
+      <h2>HKUCS FYP Ride-sharing App For Hong Kong</h2>
+      <h3>Overview: </h3>
+      <p>Use simple algorithm to pair up two riders and assign a driver for them - one greedy and one advance algorithm.
+        Also, a simple mobile app user interface</p>
+      <h3>Tech Stack: </h3>
+      <p>
+        Front-end: React Native + Expo<br />
+        Back-end: Nodejs + Expressjs + MongoDB + Redis
+      </p>
+      <h3>Github Link: </h3>
+      <p>
+        <a href="https://github.com/eric19960304/Ridesharing-App-For-HK"
+          target="_blank">https://github.com/eric19960304/Ridesharing-App-For-HK</a>
+        <br />
+        <a href="https://github.com/eric19960304/Ridesharing-App-For-HK-Back-End"
+          target="_blank">https://github.com/eric19960304/Ridesharing-App-For-HK-Back-End</a>
+      </p>
+    </div>
+  </app-project-desc>
+  <app-project-desc>
+    <app-slider-image image-comp [imagePaths]="[
+    '/assets/images/kong-cha1.png',
+    '/assets/images/kong-cha2.png',
+  ]"></app-slider-image>
+    <div detail>
+      <h2>Kong Cha Membership App</h2>
+      <h3>Overview: </h3>
+      <p>A PWA App for a milk tea shop to provide loyalty program for customers. Clerk can update the points using the
+        admin app.</p>
+      <h3>Tech Stack: </h3>
+      <p>
+        Front-end: ReactJS<br />
+        Back-end: Nodejs + Expressjs + MongoDB
+      </p>
+    </div>
+  </app-project-desc>
 </div>

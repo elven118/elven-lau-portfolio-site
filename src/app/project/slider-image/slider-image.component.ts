@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slider-image',
@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./slider-image.component.scss']
 })
 export class SliderImageComponent {
-  imagePaths = [
-    '/assets/images/kong-cha1.png',
-    '/assets/images/kong-cha2.png',
-  ]
+  @Input() imagePaths: string[] = [];
   currentIndex = 0;
 
   handlePrev = () => {

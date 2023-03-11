@@ -1,13 +1,6 @@
 @import url('../../../palattes.scss');
 
-.slides-container {
-  position: relative;
-  height: 100%;
-  width: auto;
-  margin: auto;
-}
-
-.slides-container img {
+.image-style {
   height: 100%;
   width: auto;
   margin: auto;
@@ -27,11 +20,11 @@
 }
 
 .prev {
-  left: 0;
+  left: 5%;
 }
 
 .next {
-  right: 0;
+  right: 5%;
 }
 
 .prev:hover, .next:hover {

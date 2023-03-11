@@ -1,11 +1,4 @@
-.cell-container {
-  height: 600px;
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-
-.cell-container img {
+.image-style {
   height: 100%;
   width: auto;
   margin: auto;
@@ -18,12 +11,6 @@
   grid-row-gap: 30px;
   width: 96%;
   margin: auto;
-}
-
-@media screen and (max-width : 1200px) {
-  .grid-container {
-      width: 96%;
-  }
 }
 
 @media screen and (max-width: 768px) {
