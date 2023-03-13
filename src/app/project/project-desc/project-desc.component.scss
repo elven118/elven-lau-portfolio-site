@@ -21,6 +21,7 @@
   grid-template-columns: auto auto;
   gap: 5px;
   align-items: center;
+  z-index: 1;
 }
 
 .top-right-close-button {
@@ -53,6 +54,7 @@
   width: 90%;
   height: 100%;
   text-align: start;
+  z-index: 2;
 }
 
 #height56 {

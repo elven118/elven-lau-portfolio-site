@@ -1,7 +1,10 @@
 <h1 class="section-header">Project</h1>
 <div class="grid-container">
   <app-project-desc>
-    <img class="image-style" src="../../assets/images/ride-sharing-app.jpg" image-comp />
+    <app-slider-image image-comp [imagePaths]="[
+    '/assets/images/ride-sharing-app1.jpg',
+    '/assets/images/ride-sharing-app2.jpg'
+  ]"></app-slider-image>
     <div detail>
       <h2>HKUCS FYP Ride-sharing App For Hong Kong</h2>
       <h3>Overview: </h3>

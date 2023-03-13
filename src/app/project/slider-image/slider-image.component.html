@@ -1,6 +1,14 @@
-<div class="image-style" *ngFor="let imagePath of imagePaths; let i = index" >
-  <!-- [@animImageSlider]="slideControl[i]" -->
-  <img class="image-style" [src]="imagePath" />
+<div class="carousel-container" [ngStyle]="{'width': currImgWidth + 'px'}">
+  <div class="carousel-slide" #imageSlide>
+    <div class="image-style" *ngFor="let imagePath of imagePaths; let i = index">
+      <img getImage class="image-style" [src]="imagePath" (load)="i === 0 && onFirstImageLoad()" #image />
+    </div>
+  </div>
 </div>
-<a class="prev" (click)="handlePrev()">&#10094;</a>
-<a class="next" (click)="handleNext()">&#10095;</a>
+<a class="prev" (click)="handleChangePage(currentIndex - 1)">&#10094;</a>
+<a class="next" (click)="handleChangePage(currentIndex + 1)">&#10095;</a>
+<div class="bottom-btn-container" >
+  <ng-container *ngFor="let imgPath of imagePaths; let i = index">
+    <a class="bottom-btn" [ngClass]="{'active-btn': i === currentIndex}" (click)="handleChangePage(i)"></a>
+  </ng-container>
+</div>

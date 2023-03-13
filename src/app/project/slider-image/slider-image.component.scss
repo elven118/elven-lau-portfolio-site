@@ -1,5 +1,18 @@
 @import url('../../../palattes.scss');
 
+.carousel-container {
+  height: calc(100% - 17px);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  height: 100%;
+  width: auto;
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
 .image-style {
   height: 100%;
   width: auto;
@@ -30,4 +43,29 @@
 .prev:hover, .next:hover {
   color: var(--grey);
   background-color: rgba(var(--black-rgb), 0.9);
+}
+
+.bottom-btn-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bottom-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
+.bottom-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.active-btn {
+  background-color: var(--primary);
 }
