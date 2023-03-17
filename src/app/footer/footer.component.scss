@@ -6,4 +6,21 @@
   right: 0;
   z-index: 100;
   background-color: var(--nav-grey);
+  padding: 10px;
+}
+
+#footer a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.svg-icon {
+  font-size: 30px;
+}
+
+.icon-white {
+  color: var(--white);
+}
+
+#linkedin-logo {
+  color: var(--linkedin-blue);
 }

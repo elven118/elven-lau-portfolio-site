@@ -13,6 +13,10 @@ export class NavbarComponent {
     this.isActive = !this.isActive
   };
 
+  inactiveClick = () => {
+    this.isActive = false;
+  }
+
   @HostListener("window:scroll", [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;

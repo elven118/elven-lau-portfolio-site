@@ -1,7 +1,14 @@
 <nav id="footer">
-  <a>
-    <!-- <mat-icon fontIcon="gmail"></mat-icon>
-    <mat-icon fontIcon="github"></mat-icon>
-    <mat-icon fontIcon="linkedin"></mat-icon> -->
+  <a href="https://github.com/elven118" target="_blank">
+    <fa-icon [icon]="faGithub" class="svg-icon icon-white"></fa-icon>
+  </a>
+  <a href="https://www.linkedin.com/in/chun-yin-lau-92a3431aa" target="_blank">
+    <fa-layers [fixedWidth]="true" class="svg-icon">
+      <fa-icon [icon]="faSquare" id="linkedin-logo"></fa-icon>
+      <fa-icon [inverse]="true" [icon]="faLinkedin"></fa-icon>
+    </fa-layers>
+  </a>
+  <a href="mailto:elven.lauchunyin@gmail.com">
+    <fa-icon [icon]="faEnvelope" class="svg-icon icon-white"></fa-icon>
   </a>
 </nav>

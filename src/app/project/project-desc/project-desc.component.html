@@ -1,12 +1,15 @@
 <div class="cell-container">
   <a *ngIf="!isDetails" class="top-right-detail-button" (click)="onClickDetails()">
-    <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    <fa-layers [fixedWidth]="true" class="svg-icon">
+      <fa-icon [icon]="faCircle"></fa-icon>
+      <fa-icon [icon]="faInfo"  transform="shrink-6"></fa-icon>
+    </fa-layers>
     <span>Details</span>
   </a>
   <ng-content select="[image-comp]"></ng-content>
   <div *ngIf="isDetails" class="content-layer">
     <a class="top-right-close-button" (click)="onClickClose()">
-      <mat-icon class="close-icon" fontIcon="close"></mat-icon>
+      <fa-icon [icon]="faXmark" class="close-icon"></fa-icon>
     </a>
     <div>
       <div id="height56"></div>
