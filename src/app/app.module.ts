@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ProjectModule } from './project/project.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProjectModule } from './project/project.module';
     HomeComponent,
     NavbarComponent,
     AboutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

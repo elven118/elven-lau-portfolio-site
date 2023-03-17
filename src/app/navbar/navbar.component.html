@@ -7,10 +7,10 @@
   </div>
   <ul id="nav-menu" [ngClass]="{'active': isActive}">
     <li>
-      <a href="#home" class="nav-item">Home</a>
+      <a href="#home" class="nav-item" (click)="toggleClick()">Home</a>
     </li>
     <li>
-      <a href="#about" class="nav-item">About</a>
+      <a href="#about" class="nav-item" (click)="toggleClick()">About</a>
     </li>
     <!-- <li>
       <a href="#" class="nav-item">Experience</a>
@@ -19,7 +19,7 @@
       <a href="#" class="nav-item">Ability</a>
     </li> -->
     <li>
-      <a href="#project" class="nav-item">Project</a>
+      <a href="#project" class="nav-item" (click)="toggleClick()">Project</a>
     </li>
   </ul>
 </nav>
