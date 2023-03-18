@@ -55,6 +55,11 @@
   height: 100%;
   text-align: start;
   z-index: 2;
+  display: none;
+}
+
+.content-display {
+  display: block;
 }
 
 #height56 {
