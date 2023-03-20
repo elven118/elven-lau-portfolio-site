@@ -1,8 +1,9 @@
+<h2 class="name-header">{{name}}</h2>
 <div class="cell-container">
   <a *ngIf="!isDetails" class="top-right-detail-button" (click)="onClickDetails()">
     <fa-layers [fixedWidth]="true" class="svg-icon">
       <fa-icon [icon]="faCircle"></fa-icon>
-      <fa-icon [icon]="faInfo"  transform="shrink-6"></fa-icon>
+      <fa-icon [icon]="faInfo" transform="shrink-6"></fa-icon>
     </fa-layers>
     <span>Details</span>
   </a>

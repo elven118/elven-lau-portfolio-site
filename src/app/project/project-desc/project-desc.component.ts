@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faXmark, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
@@ -8,6 +8,8 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./project-desc.component.scss'],
 })
 export class ProjectDescComponent {
+  @Input() name: string = '';
+
   faInfo = faInfo;
   faCircle = faCircle;
   faXmark = faXmark;

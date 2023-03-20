@@ -1,7 +1,12 @@
 @import url('../../../palattes.scss');
 
+.name-header {
+  text-decoration: underline;
+  width: 90%;
+  margin: 12px auto;
+}
+
 .cell-container {
-  height: 600px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -10,7 +15,7 @@
 .top-right-detail-button {
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 10px;
   width: auto;
   background-color: rgba(var(--black-rgb), 0.8);
@@ -27,7 +32,7 @@
 .top-right-close-button {
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 10px;
   padding: 10px;
   width: auto;
@@ -41,9 +46,11 @@
   height: 35px;
 }
 
-.top-right-detail-button:hover,
-.top-right-close-button:hover {
-  color: var(--grey);
+@media (hover: hover) {
+  .top-right-detail-button:hover,
+  .top-right-close-button:hover {
+    color: var(--grey);
+  }
 }
 
 .content-layer {
