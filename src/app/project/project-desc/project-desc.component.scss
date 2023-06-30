@@ -20,6 +20,8 @@
   width: auto;
   background-color: rgba(var(--black-rgb), 0.8);
   padding: 16px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 5px rgba(var(--black-rgb), 0.5);
   transition: 0.6s ease;
   user-select: none;
   display: grid;
@@ -47,7 +49,10 @@
 }
 
 @media (hover: hover) {
-  .top-right-detail-button:hover,
+  .top-right-detail-button:hover {
+    background-color: rgba(var(--dark-grey), 0.8);
+  }
+
   .top-right-close-button:hover {
     color: var(--grey);
   }

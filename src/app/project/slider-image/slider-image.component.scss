@@ -42,8 +42,7 @@
 
 @media (hover: hover) {
   .prev:hover, .next:hover {
-    color: var(--grey);
-    background-color: rgba(var(--black-rgb), 0.9);
+    background-color: rgba(var(--dark-grey), 0.8);
   }
 }
 
