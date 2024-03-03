@@ -1,4 +1,4 @@
-<div class="carousel-container" [ngStyle]="{'width': currImgWidth + 'px'}">
+<div class="carousel-container" [ngStyle]="{'width': currImgWidth + 'px'}" #imageContainer>
   <div class="carousel-slide" #imageSlide>
     <div class="image-style" *ngFor="let imagePath of imagePaths; let i = index">
       <img getImage class="image-style" [src]="imagePath" (load)="i === 0 && onFirstImageLoad()" #image />

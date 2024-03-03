@@ -59,9 +59,10 @@
 }
 
 #home-center-container p {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 45px;
   text-decoration-line: underline;
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) { 
@@ -71,7 +72,7 @@
   }
   
   #home-center-container p {
-      font-size: 30px;
+      font-size: 25px;
       line-height: 35px;
   }
 

@@ -1,13 +1,13 @@
 <h1 class="section-header">Project</h1>
-<div class="flex-container">
-  <app-project-desc class="flex-items" name="Kong Cha Membership App">
+<div class="grid-container">
+  <app-project-desc class="grid-item" name="Kong Cha Membership App">
     <app-slider-image image-comp [imagePaths]="[
-    'assets/images/kong-cha1.png',
-    'assets/images/kong-cha2.png',
-  ]" class="image-container"></app-slider-image>
+      'assets/images/kong-cha1.png',
+      'assets/images/kong-cha2.png',
+    ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
-      <p>A PWA App for a milk tea shop to provide loyalty program for customers. Clerk can update the points using the
+      <p>A PWA for a milk tea shop to provide loyalty program for customers. Clerk can update the points using the
         admin app.</p>
       <h3>Tech Stack: </h3>
       <p>
@@ -16,11 +16,11 @@
       </p>
     </div>
   </app-project-desc>
-  <app-project-desc class="flex-items" name="Bingo Card">
+  <app-project-desc class="grid-item" name="Bingo Card">
     <app-slider-image image-comp [imagePaths]="[
-    'assets/images/bingo1.png',
-    'assets/images/bingo2.png',
-    ]" class="image-container"></app-slider-image>
+      'assets/images/bingo1.png',
+      'assets/images/bingo2.png',
+      ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
       <p>Instead of relying on traditional bingo cards, consider choosing a digital version of bingo card.</p>
@@ -33,15 +33,38 @@
       <p>
         <a href="" target="_blank"></a>
         <br />
+        <a href="https://github.com/elven118/bingo-ui" target="_blank">https://github.com/elven118/bingo-ui</a>
+        <br />
         <a href="https://github.com/elven118/bingo-server" target="_blank">https://github.com/elven118/bingo-server</a>
       </p>
     </div>
   </app-project-desc>
-  <app-project-desc class="flex-items" name="HKUCS FYP Ride-sharing App For Hong Kong">
+  <app-project-desc class="grid-item" name="Simple Mailbox">
     <app-slider-image image-comp [imagePaths]="[
-    'assets/images/ride-sharing-app1.jpg',
-    'assets/images/ride-sharing-app2.jpg'
-  ]" class="image-container"></app-slider-image>
+      'assets/images/qrscan1.png',
+      'assets/images/qrscan2.png',
+      'assets/images/qrscan3.png',
+      'assets/images/qrscan4.png'
+    ]" class="image-container"></app-slider-image>
+    <div detail>
+      <h3>Overview: </h3>
+      <p>A Simple QR code scaning app</p>
+      <p></p>
+      <h3>Tech Stack: </h3>
+      <p>
+        Front-end: Flutter
+      </p>
+      <h3>Github Link: </h3>
+      <p>
+        <a href="https://github.com/elven118/QRCodeScan" target="_blank">https://github.com/elven118/QRCodeScan</a>
+      </p>
+    </div>
+  </app-project-desc>
+  <app-project-desc class="grid-item" name="HKUCS FYP Ride-sharing App For Hong Kong">
+    <app-slider-image image-comp [imagePaths]="[
+      'assets/images/ride-sharing-app1.jpg',
+      'assets/images/ride-sharing-app2.jpg'
+    ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
       <p>Use simple algorithm to pair up two riders and assign a driver for them - one greedy and one advance algorithm.
