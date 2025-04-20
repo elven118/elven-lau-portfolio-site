@@ -1,14 +1,51 @@
 <h1 class="section-header">Project</h1>
 <div class="grid-container">
+  <app-project-desc class="grid-item" name="Fairview Park Town Centre">
+    <app-slider-image image-comp [imagePaths]="[
+      'assets/images/fairviewparktc1.png',
+      'assets/images/fairviewparktc2.png',
+      'assets/images/fairviewparktc3.png',
+      'assets/images/fairviewparktc4.png',
+    ]" class="image-container"></app-slider-image>
+    <div detail>
+      <h3>Overview: </h3>
+      <p>A comprehensive mobile app designed to enhance the shopping experience at Fairview Park Town Centre by
+        integrating a digital loyalty program and personalized mall services. </p>
+      <h3>Key Feature: </h3>
+      <ul class="key-feature-list">
+        <li>Digital membership registration with reward points & exclusive member discounts</li>
+        <li>Up-to-date mall promotions and event notifications</li>
+        <li>Interactive store locator with detailed operating hours</li>
+      </ul>
+      <h3>Tech Stack: </h3>
+      <p>
+        Front-end: React Native<br />
+        Back-end: Nodejs + Expressjs + PHP + Redis
+      </p>
+      <div class="store-badge-container">
+        <a
+          href='http://play.google.com/store/apps/details?id=com.fairviewparktc.fairviewparktc&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+            alt='Get it on Google Play' src='assets/images/google-play-badge.png' id="play-store-badge" /></a>
+        <a href='https://apps.apple.com/ca/app/fairview-park-town-centre/id6744288395'><img
+            alt='Download on the App Store' src='assets/images/app-store-badge.svg' id="app-store-badge" /></a>
+      </div>
+    </div>
+  </app-project-desc>
   <app-project-desc class="grid-item" name="Kong Cha Membership App">
     <app-slider-image image-comp [imagePaths]="[
       'assets/images/kong-cha1.png',
       'assets/images/kong-cha2.png',
+      'assets/images/kong-cha3.png',
     ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
-      <p>A PWA for a milk tea shop to provide loyalty program for customers. Clerk can update the points using the
-        admin app.</p>
+      <p>Digital loyalty solution enabling customers to earn/redeem points through purchases, with admin portal for
+        staff to manage rewards.</p>
+      <h3>Key Feature: </h3>
+      <ul class="key-feature-list">
+        <li>Purchase-based points earning and redeeming system for customer retention</li>
+        <li>Staff portal for reward management and user analytics</li>
+      </ul>
       <h3>Tech Stack: </h3>
       <p>
         Front-end: ReactJS<br />
@@ -23,11 +60,16 @@
       ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
-      <p>Instead of relying on traditional bingo cards, consider choosing a digital version of bingo card.</p>
+      <p>Cross-platform digital bingo solution with real-time card synchronization and multiplayer support.</p>
+      <h3>Key Feature: </h3>
+      <ul class="key-feature-list">
+        <li>Instantly get a digital bingo by joining the room by code</li>
+        <li>Admin console to manage number draw and card validate</li>
+      </ul>
       <h3>Tech Stack: </h3>
       <p>
         Front-end: ReactJS<br />
-        Back-end: Go + gqlgen + MongoDB
+        Back-end: Golang + GraphQL (gqlgen) + MongoDB
       </p>
       <h3>Github Link: </h3>
       <p>
@@ -39,7 +81,7 @@
       </p>
     </div>
   </app-project-desc>
-  <app-project-desc class="grid-item" name="Simple Mailbox">
+  <app-project-desc class="grid-item" name="QR Code Scanner">
     <app-slider-image image-comp [imagePaths]="[
       'assets/images/qrscan1.png',
       'assets/images/qrscan2.png',
@@ -48,8 +90,12 @@
     ]" class="image-container"></app-slider-image>
     <div detail>
       <h3>Overview: </h3>
-      <p>A Simple QR code scaning app</p>
-      <p></p>
+      <p>Contactless qr registration system with scan history tracking.</p>
+      <h3>Key Feature: </h3>
+      <ul class="key-feature-list">
+        <li>Flutter-based QR code scanning with integrated camera functionality</li>
+        <li>Local storage enabling offline access to scan records</li>
+      </ul>
       <h3>Tech Stack: </h3>
       <p>
         Front-end: Flutter
@@ -69,6 +115,12 @@
       <h3>Overview: </h3>
       <p>Use simple algorithm to pair up two riders and assign a driver for them - one greedy and one advance algorithm.
         Also, a simple mobile app user interface</p>
+      <h3>Key Feature: </h3>
+      <ul class="key-feature-list">
+        <li>Rider-driver pairing using greedy and advanced algorithms</li>
+        <li>Route planning with real-time location tracking</li>
+        <li>Cross-platform mobile interface compatible with iOS and Android</li>
+      </ul>
       <h3>Tech Stack: </h3>
       <p>
         Front-end: React Native + Expo<br />
